@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;;
   color: #444444;
 }
 
@@ -39,8 +39,15 @@ a.hv-linkedin:hover {
   color:rgb(10 102 194);
 }
 
+a.hyperlink {
+  color: #f3f4f7;
+  text-decoration: underline;
+}
+
+
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Jost", sans-serif;
+  /* font-family: "Jost", sans-serif; */
 }
 
 .justify-content--center {
@@ -139,7 +146,7 @@ cinza #f9f9f9
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 15px 0;
+  padding: 15px 15px;
 }
 #header.header-scrolled, #header.header-inner-pages {
   background: #4f76f6;
@@ -156,7 +163,7 @@ cinza #f9f9f9
   color: #fff;
 }
 #header .logo img {
-  max-height: 40px;
+  max-height: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -196,9 +203,10 @@ cinza #f9f9f9
 }
 
 .navbar a i.whats, .navbar a:focus i.whats, a i.whats {
-  font-size: 18px;
+  font-size: 22px;
   line-height: 0;
   margin-left: 5px;
+  vertical-align: middle;
 }
 
 
@@ -365,24 +373,129 @@ cinza #f9f9f9
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
+/*--------------------------------------------------------------
+# C.O.E.S.A Section
+--------------------------------------------------------------*/
+.section-coesa {
+  background: #f6f0f0;
+  background-size: cover;
+  padding: 80px 0;
+}
+.section-coesa .section-title {
+  padding-bottom: 0px;
+}
+.section-coesa .section-title h2 {
+  margin-bottom: 40px;
+}
+.section-coesa p.phrase-coesa {
+  font-size: x-large;
+  color: #37517e;
+}
+.section-coesa .cta-btn {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.section-coesa .cta-btn:hover {
+  background: #47b2e4;
+  border: 2px solid #47b2e4;
+}
+@media (max-width:1200px) {
+  .row-coesa {
+    margin-right: calc(var(--bs-gutter-x) * -3);
+    margin-left: calc(var(--bs-gutter-x) * -3);
+  }
+}
+@media (max-width: 1000px) {
+  .section-coesa {
+    background-attachment: scroll;
+  }
+  .row-coesa {
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+  }
+}
+@media (min-width: 769px) {
+  .section-coesa .cta-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.col-square-coesa {
+  padding: 0;
+  margin: 0 10px;
+}
+
+.square-coesa {
+  border: 6px solid #595959;
+  border-radius: 10%;
+  height: 340px;
+}
+.position-texts-coesa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.letter-coesa {
+  height: 100px;  
+  font-size: xxx-large;
+  font-weight: bold;
+  color: #4f76f6;
+}
+.word-coesa {
+  height: 35px;
+  font-size: large;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.text-coesa {
+  height: 140px;
+  font-size: medium;
+  padding: 0 5px;
+  align-items: start;
+  margin-top: 8%;
+}
+@media (max-width: 769px) {
+  .col-square-coesa {
+    padding: inherit;
+    margin: inherit;
+  }
+
+  .square-coesa {
+    height: 280px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 80vh;
+  height: auto;
   background: #4f76f6;
 }
 #hero .container {
-  padding-top: 72px;
+  padding-top: 90px;
 }
 #hero h1 {
-  margin: 0 0 10px 0;
-  font-size: 48px;
+  margin: auto 0;
+  font-size: 50px;
+  text-align: center;
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+  padding: 0 4%;
 }
 #hero h2 {
   color: rgba(255, 255, 255, 0.6);
@@ -427,9 +540,16 @@ cinza #f9f9f9
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
+@media (max-width: 1400px) {
+  #hero h1 {
+    font-size: 40px;
+  }
+}
 @media (max-width: 991px) {
+  #hero .container {
+    padding-top: 72px;
+  }
   #hero {
-    height: 100vh;
     text-align: center;
   }
   #hero .animated {
@@ -438,15 +558,18 @@ cinza #f9f9f9
   }
   #hero .hero-img {
     text-align: center;
+    opacity: 0.8;
   }
   #hero .hero-img img {
     width: 50%;
+    border-radius: 3%;
   }
 }
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    font-size: 30px;
     line-height: 36px;
+    padding: 0;
   }
   #hero h2 {
     font-size: 18px;
@@ -488,7 +611,7 @@ cinza #f9f9f9
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 60px 15px;
   overflow: hidden;
 }
 
@@ -502,6 +625,10 @@ section {
 
 .section-bg--grey {
   background-color: #f9f9f9;
+}
+
+.section-bg--white {
+  background-color: #fff;
 }
 
 .section-title {
@@ -542,6 +669,19 @@ section {
 }
 .section-title p {
   margin-bottom: 0;
+}
+
+
+@media (max-width: 1400px) {
+  .section-title h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 22px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -602,7 +742,7 @@ section {
   margin-bottom: 0;
 }
 .about .content .btn-learn-more {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -627,7 +767,7 @@ section {
 # Why Us
 --------------------------------------------------------------*/
 .why-us .content {
-  padding: 60px 100px 0 100px;
+  padding: 15px 100px 0 100px;
 }
 .why-us .content h3 {
   font-weight: 400;
@@ -639,8 +779,11 @@ section {
   font-weight: 700;
   margin-top: 5px;
 }
+.why-us .content h2 {
+  color: #37517e;
+}
 .why-us .content p {
-  font-size: 15px;
+  font-size: 16px;
   color: #848484;
 }
 .why-us .img {
@@ -672,13 +815,14 @@ section {
 .why-us .accordion-list a {
   display: block;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
   padding-right: 30px;
   outline: none;
   cursor: pointer;
+  color: #37517e;
 }
 .why-us .accordion-list a.books {
   display: inline;
@@ -686,10 +830,9 @@ section {
 
 }
 .why-us .accordion-list span {
-  color: #47b2e4;
+  color: #37517e;
   font-weight: 600;
   font-size: 18px;
-  padding-right: 10px;
 }
 .why-us .accordion-list i {
   font-size: 24px;
@@ -708,7 +851,7 @@ section {
   color: #343a40;
 }
 .why-us .accordion-list a.collapsed:hover {
-  color: #47b2e4;
+  color: #37517e;
 }
 .why-us .accordion-list a.collapsed .icon-show {
   display: inline-block;
@@ -746,7 +889,7 @@ section {
   font-weight: 700;
   font-size: 32px;
   color: #37517e;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 .skills .content ul {
   list-style: none;
@@ -775,7 +918,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   color: #37517e;
 }
 .skills .progress .skill .val {
@@ -819,6 +962,9 @@ section {
   color: #37517e;
   transition: ease-in-out 0.3s;
 }
+.services h2 {
+  color: #37517e;
+}
 .services .icon-box p {
   line-height: 24px;
   font-size: 14px;
@@ -837,15 +983,31 @@ section {
 .cta {
   background: #f9f9f9;
   background-size: cover;
-  padding: 120px 0;
+  padding: 80px 0;
+}
+#whois {
+  background: #f6f0f0;
+}
+
+.icons-whois {
+  font-size: 80px;
+  padding: 5px;
+  color: #4f76f6;
+  border: 5px solid #4f76f6;
+  background: white;
+  border-radius: 10%;
+}
+.phrase-whois {
+  font-size: large;
+  color: #0c3c53;
+}
+.cta .section-title {
+  padding-bottom: 0px;
 }
 .cta h3 {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
-}
-.cta p {
-  color: #fff;
 }
 .cta .cta-btn {
   font-family: "Jost", sans-serif;
@@ -880,6 +1042,9 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+#portifolio, .portfolio {
+  background: #ededed;
+}
 .portfolio #portfolio-flters {
   list-style: none;
   margin-bottom: 20px;
@@ -895,30 +1060,33 @@ section {
   transition: all 0.3s;
   padding: 8px 20px;
   border-radius: 50px;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
   background: #47b2e4;
   color: #fff;
 }
-.portfolio .portfolio-item {
+/* .portfolio .portfolio-item {
   margin-bottom: 30px;
-}
+} */
 .portfolio .portfolio-item .portfolio-img {
   overflow: hidden;
 }
 .portfolio .portfolio-item .portfolio-img img {
   transition: all 0.6s;
 }
+.portfolio .portfolio-item .portfolio-img img.img-fluid {
+  height: 250px;
+  width: 100%;
+}
 .portfolio .portfolio-item .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  left: 15px;
-  bottom: 0;
+  opacity: 1;  /* 0 para sumir e aparecer com hover */
+  position: relative;
+  top: -40px;
   z-index: 3;
-  right: 15px;
+  width: 100%;
   transition: all 0.3s;
-  background: rgba(55, 81, 126, 0.8);
+  background: #4f76f6;
   padding: 10px 15px;
 }
 .portfolio .portfolio-item .portfolio-info h4 {
@@ -952,6 +1120,10 @@ section {
 }
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
 }
 
 /*--------------------------------------------------------------
@@ -1072,20 +1244,30 @@ section {
   align-items: center;
   justify-content: center;
   border-radius: 50px;
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   background: #eff2f8;
 }
 .team .member .social a i {
   color: #37517e;
-  font-size: 16px;
+  font-size: 20px;
   margin: 0 2px;
 }
-.team .member .social a:hover {
-  background: #77f2a1;
+
+.team .member .social a:hover:hover {
+  background: #fff;
 }
-.team .member .social a:hover i {
-  color: #77f2a1;
+.team .member .social a.hv-youtube:hover i {
+  color: #ff0000;
+}
+.team .member .social a.hv-medium:hover i {
+  color: rgb(0 0 0);
+}
+.team .member .social a.hv-instagram:hover i {
+  color: #de3c73;
+}
+.team .member .social a.hv-linkedin:hover i {
+  color: rgb(10 102 194);
 }
 .team .member .social a + a {
   margin-left: 8px;
@@ -1115,7 +1297,6 @@ section {
   font-size: 48px;
   color: #37517e;
   font-weight: 400;
-  font-family: "Jost", sans-serif;
   margin-bottom: 25px;
 }
 .pricing h4 sup {
@@ -1161,7 +1342,6 @@ section {
   transition: none;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Jost", sans-serif;
   transition: 0.3s;
   border: 1px solid #47b2e4;
 }
@@ -1201,6 +1381,9 @@ section {
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
+.faq .section-title h2 {
+  color: #fff;
+}
 .faq .faq-list {
   padding: 0 100px;
 }
@@ -1220,13 +1403,13 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
   padding: 0 30px;
   outline: none;
   cursor: pointer;
+  color: #47b2e4;
 }
 .faq .faq-list .icon-help {
   font-size: 24px;
@@ -1547,7 +1730,6 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Jost", sans-serif;
   color: #5e5e5e;
 }
 #footer .footer-top h4 {
@@ -1634,5 +1816,39 @@ section {
   }
   #footer .credits {
     padding-top: 4px;
+  }
+}
+
+/****************************
+UTILS
+/*****************************/
+.text-decoration--underline {
+  text-decoration: underline;
+}
+.text-align--center {
+  text-align: center;
+}
+.color--white {
+  color: #fff;
+}
+.display--flex {
+  display: flex;
+}
+.no--padding {
+  padding: 0;
+}
+
+.color--blue-primary {
+  color: #4f76f6;
+}
+.font--bold {
+  font-weight: bold;
+}
+.mt-6 {
+  margin-top: 4rem!important;
+}
+@media (max-width: 680px) {
+  .display-md--none {
+    display:none;
   }
 }
