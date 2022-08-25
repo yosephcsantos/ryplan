@@ -29,6 +29,15 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-068S6PXK3H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-068S6PXK3H');
+  </script>
   <!-- =======================================================
   * Template Name: Arsha - v4.5.0
   * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
@@ -79,7 +88,8 @@
             </ul>
           </li> -->
           <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li>-->
-          <li><a target="_blank" class="getstarted scrollto" href="https://api.whatsapp.com/send?phone=5521972226812">Fale com a gente <i class='whats bx bxl-whatsapp'></i></a></li>
+          <!-- <li><a target="_blank" class="getstarted scrollto" href="https://forms.gle/3qaUS9oQ6RPgSNQY9">Se inscreva <i class='bx bx-rocket'></i></a></li> -->
+          <li><a target="_blank" class="getstarted scrollto" href="https://api.whatsapp.com/send?phone=5521972226812">Fale conosco <i class='whats bx bxl-whatsapp'></i></a></li>
         </ul>
         <i class='bx bx-menu mobile-nav-toggle'></i>
       </nav><!-- .navbar -->
@@ -96,14 +106,10 @@
           <h1>Seja o líder de impacto <br class="display-md--none"> que você nasceu para ser</h1>
           <span class="text-align--center color--white mt-4">O melhor guia para levar sua equipe para o próximo nível está aqui</span>
           <!-- <h2>através do nosso treinamento evolutivo focado em pessoas, na estratégia e com tecnologia</h2> -->
-          <div class="d-flex justify-content-center justify-content-center my-4">
-            <!-- <a target="_blank"
-             href="https://forms.gle/RFtdbmtfuxtTVLAq6" class="btn-get-started scrollto">
-              Fale com a gente <i style="vertical-align: middle;" class='bx bxs-chevron-right' ></i>
-            </a> -->
-            <a target="_blank" class="btn-get-started scrollto" href="https://api.whatsapp.com/send?phone=5521972226812">Fale com a gente <i class='whats bx bxl-whatsapp'></i></a>
-            <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
-          </div>
+          
+         
+
+         
           <!-- <div class="d-flex justify-content-center justify-content-center my-1">
             <p>
               <a class="hyperlink" 
@@ -120,6 +126,60 @@
     </div>
 
   </section><!-- End Hero -->
+
+
+  <section class="section-timer">
+    <div class="row justify-content-center">
+      <div class="col-md-2 mb-md-0 mb-4 timer-text my-1">
+        As inscrições encerram em: 
+      </div>
+      <div class="col-10 col-md-4 timer my-1">
+        <div class="timer-size justify-content-center">
+          <span class="col-3 me-1">
+            <div class="row px-1 text-align--center justify-content--center">
+              <div class="timer-bord col-10">
+                <span class="timer-number" id="days"></span>
+                <span class="timer-letter">dias</span>
+              </div>
+            </div>
+          </span>
+          <span class="col-3 me-1">
+            <div class="row px-1 text-align--center justify-content--center">
+              <div class="timer-bord col-10">
+                <span class="timer-number" id="hours"></span>
+                <span class="timer-letter">horas</span>
+              </div>
+            </div>
+          </span>
+          <span class="col-3 me-1">
+            <div class="row px-1 text-align--center justify-content--center">
+              <div class="timer-bord col-10">
+                <span class="timer-number" id="minutes"></span>
+                <span class="timer-letter">min.</span>
+              </div>
+            </div>
+          </span>
+          <span class="col-3">
+            <div class="row px-1 text-align--center justify-content--center">
+              <div class="timer-bord col-10">
+                <span class="timer-number" id="seconds"></span>
+                <span class="timer-letter">seg.</span>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="col-10 mt-md-0 mt-4 mb-md-0 mb-2 col-md-3 justify-content--center align-items-center d-flex">
+        <!-- <a target="_blank"
+         href="https://forms.gle/RFtdbmtfuxtTVLAq6" class="btn-get-started scrollto">
+          Fale com a gente <i style="vertical-align: middle;" class='bx bxs-chevron-right' ></i>
+        </a> -->
+        <a target="_blank" class="btn-get-started scrollto" href="https://forms.gle/3qaUS9oQ6RPgSNQY9">FAZER INSCRIÇÃO AGORA <i class='rocket bx bx-rocket'></i></a>
+        <!-- <a target="_blank" class="btn-get-started scrollto" href="https://api.whatsapp.com/send?phone=5521972226812">Fale com a gente <i class='whats bx bxl-whatsapp'></i></a> -->
+        <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+      </div>
+    </div>
+  </section>
 
   <main id="main">
 
@@ -311,7 +371,7 @@
     <section id="why-us" class="why-us section-bg--services">
       <div class="container-fluid" data-aos="fade-up">
 
-        <div class="row">
+        <div class="row justify-content--center">
           <!-- <div class="col-lg-5 align-items-stretch order-2 order-lg-1 img" style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-1 order-lg-2"> -->
 
@@ -319,7 +379,7 @@
               <div class="section-title">
                 <h2 class="mb-4">Módulos do Framework <strong>C.O.E.S.A.</strong></h2>
                 <p>
-                  O que você vai aprender em cada módulo:
+                  O que você vamos refletir juntos em cada módulo:
                 </p>
               </div>
             </div>
@@ -437,34 +497,23 @@
       </div>
     </section><!-- End Why Us Section -->
 
-<!-- ======= For Who is Section ======= -->
-<section id="whois" class="cta">
+
+<!-- ======= The event is Section ======= -->
+<section id="the-event" class="cta">
   <div class="container">
 
     <div class="row">
       <div class="section-title text-center">
-        <h2>Para quem é</h3>
+        <h2>Estamos em Pré-lançamento</h3>
         <div class="row position-texts-coesa">    
-            <p class="mt-4 col-12 col-md-10 phrase-whois">
-              No Ryplan não importa o segmento do seu negócio, se deseja conquistar uma liderança de impacto, 
-              <br> seja para cliente final (B2C) ou para empresas (B2B), o nosso treinamento é para todos.
+            <p class="mt-4 col-12 col-md-10">
+              <!-- <strong>As inscrições se encerram dia 20/09/2022 às 23h59.</strong> <br> -->
+              Vamos te incentivar e te provocar a alcançar níveis de impacto maiores na sua forma de liderar.<br class="display-md--none">
+              As vagas são limitadas. A data e o horário do treinamento serão enviados após o encerramento das inscrições.
             </p>
         </div>
-        <div class="row mt-6 justify-content--center">
-          <div class="mt-3 mt-md-0 col-12 col-md-3">
-            <i class='icons-whois bx bx-group'></i>
-            <p class="mt-2 color--blue-primary font--bold">Funcionários, Autônomos e Empreendedores</p>
-          </div>
-
-          <div class="mt-3 mt-md-0 col-12 col-md-3">
-            <i class='icons-whois bx bx-building-house' ></i>
-            <p class="mt-2 color--blue-primary font--bold">B2C e B2B</p>
-          </div>
-
-          <div class="mt-3 mt-md-0 col-12 col-md-3">
-            <i class='icons-whois bx bx-store-alt'></i>
-            <p class="mt-2 color--blue-primary font--bold">Pequenos à Grandes negócios</p>
-          </div>
+        <div class="d-flex justify-content-center justify-content-center mt-5">
+          <a target="_blank" class="btn-get-started scrollto" href="https://forms.gle/3qaUS9oQ6RPgSNQY9">FAZER INSCRIÇÃO AGORA <i class='rocket bx bx-rocket'></i></a>
         </div>
       </div>
     </div>
@@ -478,7 +527,7 @@
   <div class="container">
 
     <div class="section-title">
-      <h2>Perguntas frequentes</h2>
+      <h2>Perguntas frequentes sobre o pré-lançamento</h2>
     </div>
 
     <div class="faq-list">
@@ -488,7 +537,7 @@
           <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
             <p>
               Sim, na conclusão dos módulos C.O.E.S.A. (Comunicação, Organização, Experimentação, Sabedoria e Atitude) você já estará apto a receber 
-              o certificado digital da Ryplan.
+              o certificado digital da Ryplan mesmo no treinamento do pré-lançamento que será um resumo de cada módulo do Framework.
             </p>
           </div>
         </li>
@@ -498,7 +547,10 @@
           <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
             <p>
               Cada letra do Framework C.O.E.S.A. é um módulo do treinamento. 
-              Cada módulo é ministrado semanalmente, logo, estaremos juntos 1 vez por semana dando um total de 5 semanas imersos.
+              No pré-lançamento faremos uma síntese de cada módulo para maior proveito possível do conteúdo. 
+              A carga horária total será de 2 horas
+              <br><br>
+              No treinamento completo cada módulo é ministrado semanalmente, logo, estaremos juntos 1 vez por semana dando um total de 5 semanas imersos.
               O treinamento tem uma carga horária de 8 horas.
             </p>
           </div>
@@ -519,8 +571,20 @@
           <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
             <p>
               O Framework C.O.E.S.A. em todos os seus módulos tem exercícios práticos além da teoria.
+              No pré-lançamento será um resumo de cada módulo, logo, 
+              vamos entregar algumas das ferramentas para você colocar em prática.
+              <br><br>
               Se quiser potencializar ainda mais, temos a mentoria para implementar todas as práticas apresentadas no treinamento dentro da sua equipe/empresa.
               Não vai faltar conteúdo prático e exercícios para realizar.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Qual a data do treinamento no Pré-lançamento? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+          <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+            <p>
+              A data e horário só serão disponibilizado após o encerramento das inscrições que acabam dia 15/09/2022
             </p>
           </div>
         </li>
@@ -529,6 +593,54 @@
 
   </div>
 </section><!-- End Frequently Asked Questions Section -->
+
+<!-- ======= For Who is Section ======= -->
+<section id="whois" class="cta">
+  <div class="container">
+
+    <div class="row">
+      <div class="section-title text-center">
+        <h2>Para quem é</h3>
+        <div class="row position-texts-coesa">    
+            <p class="mt-4 col-12 col-md-10 phrase-whois">
+              Nosso treinamento é para todos que desejam conquistar uma liderança de impacto.
+              O Framework C.O.E.S.A. se torna um potencializador para a sua liderança porquê ele te conduz a aprimorar sua visão 360º como líder.
+            </p>
+        </div>
+        <div class="row mt-6 justify-content--center">
+          <div class="mt-md-0 col-12 col-md-3">
+            <i class='icons-whois bx bx-group'></i>
+            <p class="mt-3 color--blue-primary font--bold">Funcionários, Autônomos e Empreendedores</p>
+          </div>
+
+          <div class="mt-5 mt-md-0 col-12 col-md-3">
+            <i class='icons-whois bx bx-building-house' ></i>
+            <p class="mt-3 color--blue-primary font--bold">B2C e B2B</p>
+          </div>
+
+          <div class="mt-5 mt-md-0 col-12 col-md-3">
+            <i class='icons-whois bx bx-store-alt'></i>
+            <p class="mt-3 color--blue-primary font--bold">Pequenos à Grandes negócios</p>
+          </div>
+        </div>
+        <!-- <div class="d-flex justify-content-center justify-content-center mt-5">
+          <a target="_blank" class="btn-get-started scrollto" href="https://forms.gle/3qaUS9oQ6RPgSNQY9">FAZER INSCRIÇÃO AGORA <i class='rocket bx bx-rocket'></i></a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</section><!-- End Cta Section -->
+
+<section class="section-timer">
+  <div class="row justify-content-center">
+    <div class="col-md-2 mb-md-0 mb-2 timer-text">
+      As vagas são limitadas
+    </div>
+    <div class="col-10 mt-md-0 mt-3 mb-md-0 mb-2 col-md-3 justify-content--center align-items-center d-flex">
+      <a target="_blank" class="btn-get-started scrollto" href="https://forms.gle/3qaUS9oQ6RPgSNQY9">FAZER INSCRIÇÃO AGORA <i class='rocket bx bx-rocket'></i></a>
+    </div>
+  </div>
+</section>
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg--services">
@@ -560,7 +672,7 @@
                 <div class="icon col-2 justify-content--center align-items-center display--flex">
                   <i class='bx bx-rocket'></i>
                 </div>
-                <h4 class="col-10"><a href="">Talento natural <br> + Sua experiência</a></h4>
+                <h4 class="col-10"><a href="">Seu talento natural <br> + Sua experiência</a></h4>
               </div>
               <p>
                 Valorizamos seu talento natural e suas experiências como líder a fim de potencializar seus resultados com o framework C.O.E.S.A.
@@ -572,7 +684,7 @@
             <div class="icon-box">
               <div class="row">
                 <div class="icon col-2 justify-content--center align-items-center display--flex"><i class='bx bx-door-open'></i></div>
-                <h4 class="col-10"><a href="">Alto desempenho da organização</a></h4>
+                <h4 class="col-10"><a href="">Alto desempenho da sua equipe</a></h4>
               </div>
               
               <p>
@@ -740,7 +852,7 @@
               <div class="member-info">
                 <h4>Yoseph Santos</h4>
                 <span>Descomplicando a liderança</span>
-                <p>Experiência em empresas renomadas como Líder de Pessoas e Engenheiro de Software</p>
+                <p>Atualmente está como Diretor de Tecnologia em Inovação. <br> Possui experiência em empresas renomadas como Líder de Pessoas e Engenheiro de Software</p>
                 <p>Fundador da Ryplan & Autor do livro: <a style="font-weight: bold;" class="books" href="https://sun.eduzz.com/446835" target="_blank">Lidere fora dos limites</a></p>
                 <div class="social">
                   <a
@@ -762,7 +874,7 @@
               <div class="member-info">
                 <h4>Glenda Theis</h4>
                 <span>Criando experiência incríveis</span>
-                <p>Líder de negócios digitais, projetos inovadores e foco na experiência de sucesso do cliente</p>
+                <p>Atualmente está como Gerente de Produto Digital. <br>Possui experiência como Líder de negócios digitais e foco na experiência de sucesso do cliente</p>
                 <p>Co-fundadora da marca Ryplan</p>
                 <div class="social">
                   <a
