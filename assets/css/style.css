@@ -1006,10 +1006,16 @@ section {
 #the-event .section-title h2, #the-event p {
   color: #fff;
 }
+#the-event .free-text {
+  font-size: 20px;
+}
 .section-timer {
-  padding: 20px;
+  padding: 10px 10px 10px 10px;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,30,82,1) 7%, rgba(0,30,81,1) 100%);
+}
+.section-timer.clock {
+  padding: 10px 10px 10px 100px;
 }
 .timer {
   color: #f6f0f0;
@@ -1078,6 +1084,11 @@ section {
 .cta .cta-btn:hover {
   background: #47b2e4;
   border: 2px solid #47b2e4;
+}
+@media (max-width: 1350px) {
+  .section-timer.clock {
+    padding: 10px 10px 10px 10px;
+  }
 }
 @media (max-width: 1024px) {
   .cta {
@@ -1906,5 +1917,10 @@ UTILS
 @media (max-width: 680px) {
   .display-md--none {
     display:none;
+  }
+}
+@media (min-width: 1000px) {
+  .display-lg--none {
+    display: none;
   }
 }
