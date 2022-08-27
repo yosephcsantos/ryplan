@@ -1008,14 +1008,15 @@ section {
 }
 #the-event .free-text {
   font-size: 20px;
+  color: #ff8e01;
 }
 .section-timer {
-  padding: 10px 10px 10px 10px;
+  padding: 20px 10px 20px 10px;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,30,82,1) 7%, rgba(0,30,81,1) 100%);
 }
 .section-timer.clock {
-  padding: 10px 10px 10px 100px;
+  padding: 20px 10px 20px 100px;
 }
 .timer {
   color: #f6f0f0;
@@ -1087,7 +1088,7 @@ section {
 }
 @media (max-width: 1350px) {
   .section-timer.clock {
-    padding: 10px 10px 10px 10px;
+    padding: 40px 10px 20px 10px;
   }
 }
 @media (max-width: 1024px) {
