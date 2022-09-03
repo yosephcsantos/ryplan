@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Poppins", sans-serif;;
+  font-family: "Decima Mono Cyr", "Poppins", sans-serif;
   color: #444444;
 }
 
@@ -380,7 +380,7 @@ cinza #f9f9f9
 .section-coesa {
   background: #f6f0f0;
   background-size: cover;
-  padding: 80px 0;
+  padding: 110px 0 80px 0;
 }
 .section-coesa .section-title {
   padding-bottom: 0px;
@@ -393,7 +393,6 @@ cinza #f9f9f9
   color: #37517e;
 }
 .section-coesa .cta-btn {
-  font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -418,6 +417,7 @@ cinza #f9f9f9
 @media (max-width: 1000px) {
   .section-coesa {
     background-attachment: scroll;
+    padding: 70px 0 80px 0;
   }
   .row-coesa {
     margin-right: calc(var(--bs-gutter-x) * -.5);
@@ -438,9 +438,11 @@ cinza #f9f9f9
 }
 
 .square-coesa {
-  border: 6px solid #595959;
+  border: 1px solid #ececec;
   border-radius: 10%;
   height: 340px;
+  background: #fff;
+  box-shadow: 0px 16px 80px rgba(0, 0, 0, 0.1);
 }
 .position-texts-coesa {
   display: flex;
@@ -450,7 +452,8 @@ cinza #f9f9f9
 }
 .letter-coesa {
   height: 100px;  
-  font-size: xxx-large;
+  font-size: 50px;
+  letter-spacing: -3px;
   font-weight: bold;
   color: #4f76f6;
 }
@@ -459,6 +462,7 @@ cinza #f9f9f9
   font-size: large;
   font-weight: bold;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .text-coesa {
   height: 140px;
@@ -485,36 +489,97 @@ cinza #f9f9f9
   width: 100%;
   height: auto;
   background: #4f76f6;
+  position: relative;
 }
 #hero .container {
-  padding-top: 95px;
-  padding-bottom: 45px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 1;
 }
 #hero h1 {
   margin: auto 0;
-  font-size: 50px;
+  font-size: 65px;
   text-align: center;
   font-weight: 700;
-  line-height: 56px;
+  text-transform: uppercase;
+  line-height: 4.2rem;
+  letter-spacing: -0.18rem;
   color: #fff;
   padding: 0 4%;
+}
+#hero h1 .text-born {
+  color: #001e51;
 }
 #hero h2 {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 50px;
   font-size: 24px;
 }
+#hero .hero-text--secondary {
+  font-size: 18px;
+}
+.hero-square{
+  position: absolute;
+  z-index: 0;
+  background: #476EEB;
+  border-radius: 16px;
+  transform: skew(-20deg, 0deg);
+}
+.hero-square--left{
+  left: 7.29%;
+  right: 74%;
+  top: 64.94%;
+  bottom: -7.46%;
+}
+.hero-square--center{
+  left: 43.29%;
+  right: 35%;
+  top: 22.94%;
+  bottom: -7.46%;
+}
+.hero-square--right{
+  left: 74.29%;
+  right: 7%;
+  top: 64.94%;
+  bottom: -7.46%;
+}
+.hero-square--border {
+  background: none;
+  border: 1px solid #385AC9;
+  opacity: 0.8;
+}
+.hero-square--border.hero-square--left {
+  left: -9%;
+  right: 85%;
+  top: 57%;
+}
+
+.hero-square--border.hero-square--center {
+  left: 30%;
+  right: 50%;
+  top: 14%;
+}
+
+.hero-square--border.hero-square--right {
+  left: 63%;
+  right: 20%;
+  top: 57%;
+}
 .btn-get-started {
-  font-family: "Jost", sans-serif;
+  font-family:  "Jost", sans-serif;
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 28px 11px 28px;
-  border-radius: 50px;
+  border-radius: 5px;
   transition: 0.5s;
   color: #fff;
   background: #ff8e01;
+}
+.btn-get-started.btn-color--subscribe {
+  background-color: #001e51;
 }
 .btn-get-started:hover {
   background: #ed7d00;
@@ -547,7 +612,7 @@ a.btn-get-started:hover {
 }
 @media (max-width: 1400px) {
   #hero h1 {
-    font-size: 40px;
+    font-size: 60px;
   }
 }
 @media (max-width: 991px) {
@@ -573,8 +638,8 @@ a.btn-get-started:hover {
 }
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 40px;
+    line-height: 40px;
     padding: 0;
   }
   #hero h2 {
@@ -584,6 +649,12 @@ a.btn-get-started:hover {
   }
   #hero .hero-img img {
     width: 70%;
+  }
+  .hero-square--left{
+    left: -7.29%;
+  }
+  .hero-square--center{
+    left: 39.29%;
   }
 }
 @media (max-width: 575px) {
@@ -641,8 +712,11 @@ section {
   text-align: center;
   padding-bottom: 30px;
 }
+.title-color-secondary {
+  color: #001e51;
+}
 .section-title h2 {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -680,13 +754,13 @@ section {
 
 @media (max-width: 1400px) {
   .section-title h2 {
-    font-size: 25px;
+    font-size: 35px;
   }
 }
 
 @media (max-width: 768px) {
   .section-title h2 {
-    font-size: 22px;
+    font-size: 32px;
   }
 }
 
@@ -1007,16 +1081,35 @@ section {
   color: #fff;
 }
 #the-event .free-text {
-  font-size: 20px;
+  font-size: 25px;
   color: #ff8e01;
 }
+#the-event p, #whois p {
+  font-size: 20px;
+}
+.timer-position {
+  z-index: 10;
+  position: relative;
+}
+.section-timer-background {
+  height: 140px;
+  z-index: 0;
+  width: 100%;
+  position: absolute;
+  transform: skewY(2deg);
+  left: 0;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,30,82,1) 7%, rgba(0,30,81,1) 100%);
+}
 .section-timer {
+  position: relative;
+  z-index: 20;
   padding: 20px 10px 20px 10px;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,30,82,1) 7%, rgba(0,30,81,1) 100%);
 }
 .section-timer.clock {
-  padding: 20px 10px 20px 100px;
+  padding: 20px 10px 0px 100px;
 }
 .timer {
   color: #f6f0f0;
@@ -1038,12 +1131,14 @@ section {
   position: relative;
 }
 .timer-number {
+  font-family: "Jost", sans-serif;
   font-size: 30px;
   display: block;
   margin-bottom: -13px;
 }
 .timer-letter {
   font-size: 13px;
+  font-family: "Jost", sans-serif;
 }
 .whois .btn-get-started,
 .the-event .btn-get-started {
@@ -1070,7 +1165,6 @@ section {
   font-weight: 700;
 }
 .cta .cta-btn {
-  font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -1471,7 +1565,7 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   font-weight: 500;
   padding: 0 30px;
