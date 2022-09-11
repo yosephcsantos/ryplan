@@ -388,7 +388,7 @@ cinza #f9f9f9
 .section-coesa .section-title h2 {
   margin-bottom: 40px;
 }
-.section-coesa p.phrase-coesa {
+.section-coesa p.phrase-coesa, .phrase-diff {
   font-size: x-large;
   color: #37517e;
 }
@@ -1086,6 +1086,12 @@ section {
 }
 #the-event p, #whois p {
   font-size: 20px;
+}
+#whois p {
+  text-align: left;
+}
+#whois h3 {
+  color: #37517e;
 }
 .timer-position {
   z-index: 10;

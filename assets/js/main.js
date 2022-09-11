@@ -12,7 +12,7 @@
   const hour = minute * 60;
   const day = hour * 24;
 
-  let count_down = new Date('09/15/2022 00:00:00').getTime();
+  let count_down = new Date('10/05/2022 00:00:00').getTime();
   let x = setInterval(() => countDown(count_down, second, minute, hour, day), second);
 
   const countDown = (count_down, second, minute, hour, day) => {
