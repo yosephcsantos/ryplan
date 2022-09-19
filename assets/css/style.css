@@ -443,6 +443,7 @@ cinza #f9f9f9
   height: 340px;
   background: #fff;
   box-shadow: 0px 16px 80px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 .position-texts-coesa {
   display: flex;
@@ -470,6 +471,18 @@ cinza #f9f9f9
   padding: 0 5px;
   align-items: start;
   margin-top: 8%;
+}
+.final-text-coesa {
+  bottom: 6px;
+  font-size: 14px;
+  position: absolute;
+}
+.final-text-coesa.saude {
+  color: #ff8e01;
+}
+
+.final-text-coesa.potencial {
+  color: #47b2e4;
 }
 @media (max-width: 769px) {
   .col-square-coesa {
@@ -1086,6 +1099,9 @@ section {
 }
 #the-event p, #whois p {
   font-size: 20px;
+}
+#whois .title-for-mobile {
+  display: none;
 }
 #whois p {
   text-align: left;
@@ -2018,6 +2034,14 @@ UTILS
 @media (max-width: 680px) {
   .display-md--none {
     display:none;
+  }
+  
+  #whois .title-for-mobile {
+    display: block;
+  }
+
+  #whois p {
+    font-size: 19px;
   }
 }
 @media (min-width: 1000px) {
