@@ -1,0 +1,20 @@
+#hero {
+    background-color: black;
+}
+.hero-square {
+    background:#201b1b;
+}
+.hero-square--border {
+    border-color: #4e4e4e;
+    background: none;
+}
+#hero h1 .text-born {
+ color: #476EEB;   
+}
+#header.header-scrolled, #header.header-inner-pages {
+    background-color: #000;
+}
+
+.seo-h1 {
+    color: #000; 
+}
