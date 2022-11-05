@@ -1,0 +1,72 @@
+body {
+    height: 100vh;
+}
+#hero {
+    height: 100vh;
+}
+#hero .container.links-page {
+    padding-top: 60px;
+}
+#hero h2 {
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 0;
+}
+#hero h1 {
+    padding: 15px;
+}
+#header .logo img {
+    max-height: 15px;
+}
+#header {
+    padding: 5px 0 0 15px;
+}
+section {
+    padding: 40px 15px;
+}
+.btn-get-started {
+    padding: 20px 24px 20px 24px;
+    color: #001e51;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btn-get-started.subscribe {
+    background: #e6b91c;
+}
+
+.btn-get-started.site {
+    background: #4f76f6;
+    color: #fff;
+}
+
+.btn-get-started.buy {
+    background: #77f2a1;
+}
+
+.hero-square--center {
+    left: 47.29%;
+}
+.icon-btn {
+    font-size: 23px;
+    vertical-align: sub;
+}
+a.hv-youtube:hover {
+color:rgb(217 240 242);
+}
+
+a.hv-medium:hover {
+color:rgb(217 240 242);
+}
+
+a.hv-instagram:hover {
+color:rgb(217 240 242);
+}
+
+a.hv-linkedin:hover {
+color:rgb(217 240 242);
+}
+
+a {
+    color: rgb(237 240 242);
+  }

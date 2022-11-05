@@ -1195,6 +1195,10 @@ section {
   flex-direction: row;
   display: flex;
 }
+.date-size {
+  font-size: 35px;
+  font-weight: bold;
+}
 .timer-bord {
   border: 2px solid white;
   height: 65px;
