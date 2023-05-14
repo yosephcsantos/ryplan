@@ -7,23 +7,23 @@
 (function() {
   "use strict";
 
-  const second = 1000;
-  const minute = second * 60;
-  const hour = minute * 60;
-  const day = hour * 24;
+  // const second = 1000;
+  // const minute = second * 60;
+  // const hour = minute * 60;
+  // const day = hour * 24;
 
-  let count_down = new Date('10/23/2022 00:00:00').getTime();
-  let x = setInterval(() => countDown(count_down, second, minute, hour, day), second);
+  // let count_down = new Date('10/23/2022 00:00:00').getTime();
+  // let x = setInterval(() => countDown(count_down, second, minute, hour, day), second);
 
-  const countDown = (count_down, second, minute, hour, day) => {
-    let now = new Date(Date.now()).getTime();
-    let diff = count_down - now;
+  // const countDown = (count_down, second, minute, hour, day) => {
+  //   let now = new Date(Date.now()).getTime();
+  //   let diff = count_down - now;
 
-    document.getElementById('days').innerText = Math.floor(diff / day);
-    document.getElementById('hours').innerText = Math.floor(diff % day / hour);
-    document.getElementById('minutes').innerText = Math.floor(diff % hour / minute);
-    document.getElementById('seconds').innerText = Math.floor(diff % minute / second);
-  }
+  //   document.getElementById('days').innerText = Math.floor(diff / day);
+  //   document.getElementById('hours').innerText = Math.floor(diff % day / hour);
+  //   document.getElementById('minutes').innerText = Math.floor(diff % hour / minute);
+  //   document.getElementById('seconds').innerText = Math.floor(diff % minute / second);
+  // }
 
   /**
    * Easy selector helper function

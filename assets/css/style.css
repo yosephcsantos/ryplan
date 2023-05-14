@@ -1141,6 +1141,9 @@ section {
 #whois.history {
  padding-top: 140px;
 }
+#whois.page--coesa {
+  padding-top: 90px;
+}
 .timer-position {
   z-index: 10;
   position: relative;
@@ -1164,6 +1167,10 @@ section {
 }
 .section-timer.clock {
   padding: 20px 10px 0px 100px;
+}
+
+.section-timer.page--index {
+  padding: 20px 10px 20px 10px;
 }
 .promo-btn {
   display: flex;
@@ -1262,6 +1269,9 @@ section {
 @media (max-width: 1350px) {
   .section-timer.clock {
     padding: 40px 10px 20px 10px;
+  }
+  .section-timer.section-timer.page--index {
+    padding: 20px 10px 20px 10px;
   }
 }
 @media (max-width: 1024px) {
@@ -1365,7 +1375,9 @@ section {
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
 }
-
+.portfolio.page--portifolio {
+  padding-top: 90px;
+}
 .cursor-not-allowed {
   cursor: not-allowed;
 }
